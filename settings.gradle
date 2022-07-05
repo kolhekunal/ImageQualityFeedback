@@ -1,0 +1,10 @@
+include ':app'
+
+
+
+
+
+include ':openCVLibrary341-contrib'
+include ':openCVLibrary343'
+include ':sdk'
+include ':opencv_3.4.5-contrib'

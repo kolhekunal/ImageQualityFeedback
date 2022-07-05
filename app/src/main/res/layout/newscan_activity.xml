@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/java_surface_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        opencv:camera_id="any"
+        opencv:show_fps="true"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:max="280"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        tools:layout_editor_absoluteX="14dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="93dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="132dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="44dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:text="Min"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginEnd="12dp"
+        android:text="Max"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar" />
+
+
+</android.support.constraint.ConstraintLayout>
